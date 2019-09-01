@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Editor</title>
+
+	<script type="text/javascript">
+		function refresh()
+		{
+			var textContent=document.getElementById('editor-textarea').value;
+			document.getElementById('viewer').srcdoc=textContent;
+		}
+	</script>
+
+	<style>
+		*{
+            padding:0;
+            margin:0;
+		}
+		#main{
+			width:100%;
+			height:500px;
+			background: #ecf0f1;
+			display: inline-flex;
+		}
+		#editor-textarea{
+			width: 100%;
+			height: 500px;
+			margin: 10px;
+			padding: 5px;
+			font-size: 20px;
+			background-color: #0a0f0f;
+			color:white;
+		}
+		#viewer{
+			background: white;
+			border: 1px solid #3498db;
+			width: 100%;
+			height: 500px;
+			margin: 10px;
+		}
+		#run_btn{
+			background-color:red ;
+			color:green;
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+
+	<center><h2>Learn HTML n js - Code Editor</h2>
+          <button id="run_btn" onclick="refresh()">Run</button>
+	</center>
+
+    <div id="main">
+       <textarea id="editor-textarea" placeholder="Write your Code...">
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe Pro</title>
+	<link rel="icon" href="N.jpg">
+	<style type="text/css">
+		#heading{
+			color:white;
+			background-color: black;
+			width: 350px;
+			font-family: papyrus;
+		}
+		.label{
+			width: 100px;
+			height: 100px;
+			float:left;
+			font-size: 50px;
+			font-family: papyrus;
+			background-color: white;
+			color: red;
+			border:4px solid black;
+			outline: none;
+		}
+		#frame1{
+			width: 300px;
+			height: 300px;
+		}
+		#frame2{
+			width: 200px;
+			height: 90px;
+			border: solid 2px orange;
+			color:maroon;
+		}
+		
+		#playagain{
+			width: 200px;
+			height: 50px;
+			font-size: 20px;
+			text-align: center;
+			font-family: cursive;
+			background-color: red;
+			}
+		#newgame{
+			width: 200px;
+			height: 50px;
+			text-decoration: none;
+			font-size: 20px;
+			text-align: center;
+			font-family: comic sans MS;
+			background-color: green;
+			color:orange;
+			}
+
+		#Xscore{
+			color: red;
+			width: 30px;
+		}
+		#Oscore{
+			color: green;
+			width: 30px;
+		}
+
+		#btn1{border-top:none;border-left:none;}
+		#btn2{border-top:none;}
+		#btn3{border-top:none;border-right:none;}
+		#btn4{border-left:none;}
+		#btn6{border-right:none;}
+		#btn7{border-bottom:none;border-left:none;}
+		#btn8{border-bottom:none;}
+		#btn9{border-bottom:none;border-right:none;}
+
+	</style>
+</head>
+<body>
+<center>
+
+	                <h1 id="heading">TIC TAC TOE</h1>
+
+  <div id="frame1">
+  	    <input class="label" type="button" id="btn1" onclick="clickBtn('btn1')">
+		<input class="label" type="button" id="btn2" onclick="clickBtn('btn2')">
+		<input class="label" type="button" id="btn3" onclick="clickBtn('btn3')">
+		<input class="label" type="button" id="btn4" onclick="clickBtn('btn4')">
+		<input class="label" type="button" id="btn5" onclick="clickBtn('btn5')">
+		<input class="label" type="button" id="btn6" onclick="clickBtn('btn6')">
+		<input class="label" type="button" id="btn7" onclick="clickBtn('btn7')">
+		<input class="label" type="button" id="btn8" onclick="clickBtn('btn8')">
+		<input class="label" type="button" id="btn9" onclick="clickBtn('btn9')">
+  	</div><br>
+	<div id="frame2"><u>Score Bord</u><br>
+		  Player X - <input id="Xscore" disabled="disabled"><br><br>
+		  Player 0 - <input id="Oscore" disabled="disabled">
+	</div>
+  </div>	  <br> 
+	<button id="playagain" onclick="playagain()"> Play Again </button><br><br>
+	<a href="Tic Tac Toe - Game.html"><button id="newgame">New Game </button></a>
+
+	<script type="text/javascript">
+		
+		
+
+		function clickBtn(btn){
+			click(btn);
+
+			winner();
+			draw();
+		}
+	     var game=1;
+	     function click(btn){
+	       if (game==1) {
+	     	         document.getElementById(btn).value="X";
+	     	         game=5;
+	     	         document.getElementById(btn).disabled="disabled";
+	     	    }
+	     	else{
+	     		     document.getElementById(btn).value="0";
+	     		     game=1;
+	     		     document.getElementById(btn).disabled="disabled";
+	     	     }
+	         }
+
+	      function Xscore(){
+	      			var a=Number(document.getElementById("Xscore").value);
+	      			var b=a+1;
+	      			document.getElementById("Xscore").value=b;    			
+	               }
+	      function Oscore(){
+	      			var a=Number(document.getElementById("Oscore").value);
+	      			var b=a+1;
+	      			document.getElementById("Oscore").value=b;    			
+	               }
+
+	      function playagain(){
+	      	         document.getElementById("btn1").value="";
+	      	         document.getElementById("btn2").value="";
+	      			 document.getElementById("btn3").value="";
+	      	         document.getElementById("btn4").value="";
+	      	         document.getElementById("btn5").value="";
+	      	         document.getElementById("btn6").value="";
+	      	         document.getElementById("btn7").value="";
+	      	         document.getElementById("btn8").value="";
+	      	         document.getElementById("btn9").value=""; 
+
+	      	         document.getElementById("btn1").disabled="";
+	      	         document.getElementById("btn2").disabled="";
+	      	         document.getElementById("btn3").disabled="";
+	      	         document.getElementById("btn4").disabled="";
+	      	         document.getElementById("btn5").disabled="";
+	      	         document.getElementById("btn6").disabled="";
+	      	         document.getElementById("btn7").disabled="";
+	      	         document.getElementById("btn8").disabled="";
+	      	         document.getElementById("btn9").disabled=""; 	         
+	                }
+
+		 function disabled(){
+ 					 document.getElementById("btn1").disabled="disabled";
+ 					 document.getElementById("btn2").disabled="disabled";
+ 					 document.getElementById("btn3").disabled="disabled";
+ 					 document.getElementById("btn4").disabled="disabled";
+ 					 document.getElementById("btn5").disabled="disabled";
+ 					 document.getElementById("btn6").disabled="disabled";
+ 					 document.getElementById("btn7").disabled="disabled";
+ 					 document.getElementById("btn8").disabled="disabled";
+ 					 document.getElementById("btn9").disabled="disabled";
+		           }	         
+
+         function draw(){
+         	if (
+                document.getElementById("btn1").value!="" &&
+                document.getElementById("btn2").value!="" &&
+                document.getElementById("btn3").value!="" &&
+                document.getElementById("btn4").value!="" &&
+                document.getElementById("btn5").value!="" &&
+                document.getElementById("btn6").value!="" &&
+                document.getElementById("btn7").value!="" &&
+                document.getElementById("btn8").value!="" &&
+                document.getElementById("btn9").value!="" 
+         		) {
+         		alert("game draw");
+         	}
+         }
+
+	     function winner(){
+	     	if (              //for X
+	     		document.getElementById("btn1").value=="X" &&
+	     		document.getElementById("btn2").value=="X" &&
+	     		document.getElementById("btn3").value=="X" ||
+	     		document.getElementById("btn4").value=="X" &&
+	     		document.getElementById("btn5").value=="X" &&
+	     		document.getElementById("btn6").value=="X" ||
+	     		document.getElementById("btn7").value=="X" &&
+	     		document.getElementById("btn8").value=="X" &&
+	     		document.getElementById("btn9").value=="X" ||
+	     		document.getElementById("btn1").value=="X" &&
+	     		document.getElementById("btn4").value=="X" &&
+	     		document.getElementById("btn7").value=="X" ||
+	     		document.getElementById("btn2").value=="X" &&
+	     		document.getElementById("btn5").value=="X" &&
+	     		document.getElementById("btn8").value=="X" ||
+	     		document.getElementById("btn3").value=="X" &&
+	     		document.getElementById("btn6").value=="X" &&
+	     		document.getElementById("btn9").value=="X" ||
+	     		document.getElementById("btn1").value=="X" &&
+	     		document.getElementById("btn5").value=="X" &&
+	     		document.getElementById("btn9").value=="X" ||
+	     		document.getElementById("btn7").value=="X" &&
+	     		document.getElementById("btn5").value=="X" &&
+	     		document.getElementById("btn3").value=="X" 
+	     		) {
+	     			alert("X Win");
+	     			disabled();
+	     			Xscore();
+	     		    }
+	     	else if (              //for 0
+	     		document.getElementById("btn1").value=="0" &&
+	     		document.getElementById("btn2").value=="0" &&
+	     		document.getElementById("btn3").value=="0" ||
+	     		document.getElementById("btn4").value=="0" &&
+	     		document.getElementById("btn5").value=="0" &&
+	     		document.getElementById("btn6").value=="0" ||
+	     		document.getElementById("btn7").value=="0" &&
+	     		document.getElementById("btn8").value=="0" &&
+	     		document.getElementById("btn9").value=="0" ||
+	     		document.getElementById("btn1").value=="0" &&
+	     		document.getElementById("btn4").value=="0" &&
+	     		document.getElementById("btn7").value=="0" ||
+	     		document.getElementById("btn2").value=="0" &&
+	     		document.getElementById("btn5").value=="0" &&
+	     		document.getElementById("btn8").value=="0" ||
+	     		document.getElementById("btn3").value=="0" &&
+	     		document.getElementById("btn6").value=="0" &&
+	     		document.getElementById("btn9").value=="0" ||
+	     		document.getElementById("btn1").value=="0" &&
+	     		document.getElementById("btn5").value=="0" &&
+	     		document.getElementById("btn9").value=="0" ||
+	     		document.getElementById("btn7").value=="0" &&
+	     		document.getElementById("btn5").value=="0" &&
+	     		document.getElementById("btn3").value=="0" 
+	     		) {
+	     			alert("0 Win");
+	     			disabled();
+	     			Oscore();
+	     	}
+
+	     }
+	     
+	</script>
+</center>
+</body>
+</html>
+    	</textarea>
+    	<iframe id="viewer"></iframe>
+    </div>
+
+</body>
+</html>
