@@ -1,0 +1,362 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Learn HTML n JS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+		<link rel="stylesheet" href="css/main.css"/>
+		<link rel="stylesheet" href="css/index.css"/>
+		<link rel="stylesheet" href="css/Tags.css"/>
+		<link rel="icon" href="images\N.jpg">
+	</head>
+	<body bgcolor="red">
+
+         <!-- Wrapper -->
+	   <div id="wrapper">
+
+	      <!-- Main -->
+		<div id="main">
+	    <div class="inner">
+
+			  <!-- Header -->
+		   <header id="header">
+			<a href="index.html" class="logo"><strong>Learn HTMLnJS</strong></a>
+       	   </header>  
+
+	   <!-- Banner -->
+   <section id="banner">
+	<div class="content">
+	 
+	   <h3 id="topic">Tags & Attributes:</h3>
+      <div class="dropdown">
+               <!-- Choose Tag Start-->
+       <p id="headding">Choose Tag</p>
+       <button onclick="myFunction()" class="dropbtn">&ltTAG></button>
+ <div id="myDropdown" class="dropdown-content">
+    <a href="Tags/Tag - Img.html" target="_Blank">&ltimg></a>
+    <a href="Tags/Tag - Audio.html" target="_Blank"> &ltaudio></a>
+    <a href="Tags/Tag - Video.html" target="_Blank">&ltvideo></a>
+    <a href="Tags/Tag - Font.html" target="_Blank">&ltfont></a>
+    <a href="Tags/Tag - Table.html" target="_Blank">&lttable></a>
+    <a href="Tags/Tag - UL.html" target="_Blank">&ltul></a>
+    <a href="Tags/Tag - OL.html" target="_Blank">&ltol></a>
+    <a href="Tags/Tag - Button.html" target="_Blank">&ltbutton></a>
+    <a href="Tags/Tag - Input.html" target="_Blank">&ltinput></a>
+    <a href="Tags/Tag - Iframe.html" target="_Blank">&ltiframe></a>
+  </div>
+</div>
+<script>
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>    <!-- Choose Tag End-->
+    </div>
+   </section>
+   
+   <!-- Section -->
+    <section>
+	  <div class="posts">
+	  <article>
+		<h3 id="topic">Popular Tags:</h3>
+		  <div id="bs">
+   
+   <table border="5px" align="center">
+   <tr>
+    <th class=""> Tags Name
+    <th class=""> Attributes
+    <th class=""> Uses
+   </tr>
+   <tr>
+    <td class="data">&ltimg&gt
+    <td class="data"><a href="Tags/Tag - Img.html" target="_Blank">src,alt,align...</a>
+    <td class="data">use to Insert an Image in a webpage.
+   </tr>
+   <tr>
+    <td class="data">&lt!--Comment--&gt
+    <td class="data"> -
+    <td class="data">use to write a Comment
+   </tr>
+   <tr>
+    <td class="data"> &ltbr>
+    <td class="data"> -
+    <td class="data"> use break the line.
+   </tr>
+   <tr>
+    <td class="data">&ltH1&gt to &ltH6&gt
+    <td class="data">align
+    <td class="data">use to define HTML Heading.
+   </tr>
+   <tr>
+    <td class="data">&ltp>
+    <td class="data">align
+    <td class="data">use to write Paragraphs.
+   </tr>
+   <tr>
+    <td class="data"> &lta>
+    <td class="data"> href
+    <td class="data"> Anchor tag is use to link one Page to another.
+   </tr>
+   <tr>
+    <td class="data">&ltb>
+    <td class="data"> -
+    <td class="data"> use to display Txt's in Bold.
+   </tr>
+   <tr>
+    <td class="data">&lti>
+    <td class="data"> -
+    <td class="data"> use to display Txt's in Italic.
+   </tr>
+   <tr>
+    <td class="data">&ltu>
+    <td class="data"> -
+    <td class="data">use to underline the txt.
+   </tr>
+   <tr>
+    <td class="data">&ltfont>
+    <td class="data"><a href="Tags/Tag - Font.html" target="_Blank">color,face,size
+    <td class="data">use to define the font face, font size, and color of text.
+   </tr>
+   <tr>
+    <td class="data">&lttable>
+    <td class="data"><a href="Tags/Tag - Table.html" target="_Blank">align,border...</a>
+    <td class="data"> use to create Table in a Webpage.
+   </tr>
+   <tr>
+    <td class="data">&lttr>
+    <td class="data"> -
+    <td class="data"> use to define Table Rows.
+   </tr>
+   <td class="data">&ltth>
+    <td class="data"><a href="Tags/Tag - Table.html" target="_Blank"> align,valign...</a>
+    <td class="data"> use to define Table Headding.
+   </tr>
+   <td class="data">&lttd>
+    <td class="data"><a href="Tags/Tag - Table.html" target="_Blank"> align,valign...</a>
+    <td class="data"> use to define Table Data.
+   </tr>
+   <tr>
+    <td class="data"> &ltul>
+    <td class="data"><a href="Tags/Tag - UL.html" target="_Blank"> type </a>
+    <td class="data"> use to define Unorder List.
+   </tr>
+   <tr>
+   <td class="data"> &ltol>
+    <td class="data"> <a href="Tags/Tag - OL.html" target="_Blank"> type </a>
+    <td class="data"> use to define Order List.
+   </tr>
+   <tr>
+   <td class="data"> &ltdl>
+    <td class="data"> -
+    <td class="data"> use to define description List.
+   </tr>
+    <tr>
+   <td class="data"> &ltsub>
+    <td class="data"> -
+    <td class="data"> use to define Subscripted txt
+   </tr>
+    <tr>
+   <td class="data"> &ltsup>
+    <td class="data"> -
+    <td class="data"> use to define Superscripted txt
+   </tr>
+</table>
+
+          </div>
+   </article>
+   <article>
+       <h3 id="topic">Advanced Tags (HTML 5)</h3>
+		
+<table border="5px">
+   <tr>
+    <th class=""> Tags Name
+    <th class=""> Attributes
+    <th class=""> Uses
+   </tr>
+   <tr>
+    <td class="data">&lt!DOCTYPE html>
+    <td class="data"> -
+    <td class="data"> Use to define Document type(HTML5).
+   </tr>
+   <tr>
+    <td class="data"> &ltaudio>
+    <td class="data"><a href="Tags/Tag - Audio.html" target="_Blank"> loop,muted...</a>
+    <td class="data">use to insert an Audio File.
+   </tr>
+   <tr>
+    <td class="data"> &ltvideo>
+    <td class="data"><a href="Tags/Tag - Video.html" target="_Blank"> loop,muted...
+    <td class="data"> use to insert a Video File.
+   </tr>
+   <tr>
+    <td class="data"> &ltBig>
+    <td class="data"> -
+    <td class="data"> use to define Big Txt.
+   </tr>
+   <tr>
+    <td class="data"> &ltcanvas>
+    <td class="data"> height,width
+    <td class="data">use to draw Graphics(using JavaScript).
+   </tr>
+   <tr>
+    <td class="data"> &ltdiv>
+    <td class="data"> align
+    <td class="data"> use to define a section in a Webpage.
+   </tr>
+   <tr>
+    <td class="data"> &ltform>
+    <td class="data"> action,method...
+    <td class="data"> use to define a Form for User Input.
+   </tr>
+   <tr>
+    <td class="data"> &ltinput>
+    <td class="data"><a href="Tags/Tag - Input.html" target="_Blank"> type,name...</a>
+    <td class="data"> use to defines an input control.
+   </tr>
+   <tr>
+    <td class="data">&ltbutton>
+    <td class="data"><a href="Tags/Tag - Button.html" target="_Blank">name,value...</a>
+    <td class="data"> use to insert a Button in a Webpage.
+   </tr>
+   <tr>
+    <td class="data">&ltarticle>
+    <td class="data"> -
+    <td class="data">use to Defines an article.
+   </tr>
+    <tr>
+    <td class="data">&ltdel>
+    <td class="data"> -
+    <td class="data"> use to defines text that has been deleted from a document.
+   </tr>
+   <tr>
+    <td class="data"> &ltem>
+    <td class="data"> -
+    <td class="data"> use to define Emphasized Text.
+   </tr>
+   <tr>
+    <td class="data"> &lthr>
+    <td class="data"> width
+    <td class="data"> use to insert Horizontal Line
+   </tr>
+   <tr>
+    <td class="data"> &ltlabel>
+    <td class="data"> -
+    <td class="data"> use to defines a label for an &ltinput> element
+   </tr>
+   <tr>
+    <td class="data">&ltmark>
+    <td class="data">-
+    <td class="data">use to defines marked or highlighted text.
+   </tr>
+   <tr>
+    <td class="data">&ltoption>
+    <td class="data"><a href="Tags/Tag - Option.html" target="_Blank">label,selected...</a>
+    <td class="data">use to define an option in a drop-down list.
+   </tr>
+   <tr>
+    <td class="data">&ltpre>
+    <td class="data">-
+    <td class="data">use to print same txt (preformatted text).
+   </tr>
+   <tr>
+    <td class="data">&ltiframe>
+    <td class="data"><a href="Tags/Tag - Iframe.html" target="_Blank">align,name...</a>
+    <td class="data">use to define an inline frame.
+   </tr>
+</table>
+
+	  </article>
+	 </div>
+    </section>
+	</div>
+     </div>
+	 
+
+	<!-- Sidebar -->
+	 <div id="sidebar">
+	  <div class="inner">
+       <!-- Search
+		<section id="search" class="alt">
+		  <form method="post" action="#">
+			<input type="text" name="query" id="query" placeholder="Search"/>
+		  </form>
+		</section> -->
+
+		
+		
+   	  <!-- Menu -->
+	<nav id="menu">
+     <header class="major">
+	   <h2>Learn HTML n JS</h2>
+	 </header>
+	 <ul>
+	  <li><a href="index.html">Home</a></li>
+	  <li><a href="HTML1.html">HTML</a></li>
+	  <li><a href="JS1.html">JavaScript</a></li>
+	  <li>
+		<span class="opener">More</span>
+	      <ul>
+			<li><a href="HTML1.html">HTML</a></li>
+			<li><a href="CSS1.html">CSS</a></li>
+			<li><a href="JS1.html">JavaScript</a></li>
+		  </ul>
+	  <li><a href="About.html">About</a></li>
+	  <br><br>
+  
+
+	<!-- Section 
+  <section>
+	<header class="major">
+	  <h2>HTML</h2>
+	</header>
+	<div class="mini-posts">
+	  <article>
+        <a href="Tag - Img.html"></a>
+	  </article>
+  </section>-->
+  
+  
+  <nav id="menu">
+     <header class="major">
+	   <h2>HTML Tags</h2>
+	 </header>
+	 <ul>
+	  <li><a href="Tag - Img.html">Tag - &ltimg></a></li>
+	  <li><a href="Tag - Audio.html">Tag - &ltaudio></a></li>
+	  <li><a href="Tag - Video.html">Tag - &ltvideo></a></li>
+	  <li><a href="Tag - Input.html">Tag - &ltinput></a></li>
+	  <li><a href="Tag - Iframe.html">Tag - &liframe></a></li>
+	  <br><br>
+  
+
+<br>
+<br>
+<br>
+  </div>
+ </div>
+</div>
+
+		<!-- Scripts -->
+			<script src="js/jquery.min.js"></script>
+			<script src="js/browser.min.js"></script>
+			<script src="js/breakpoints.min.js"></script>
+			<script src="js/util.js"></script>
+			<script src="js/main.js"></script>
+
+			<br>
+	</body>
+</html>

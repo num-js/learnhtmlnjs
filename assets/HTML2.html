@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Learn HTML n JS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+		<link rel="stylesheet" href="css/main.css"/>
+		<link rel="stylesheet" href="css/index.css"/>
+		<link rel="stylesheet" href="css/Tags.css"/>
+    <link rel="stylesheet" href="css/HTML2.css"/>
+		<link rel="icon" href="images\N.jpg">
+	</head>
+	<body bgcolor="red">
+
+         <!-- Wrapper -->
+	   <div id="wrapper">
+
+	      <!-- Main -->
+		<div id="main">
+	    <div class="inner">
+
+			  <!-- Header -->
+		   <header id="header">
+			<a href="index.html" class="logo"><strong>Learn HTMLnJS</strong></a>
+       	   </header>  
+
+	   <!-- Banner -->
+   <section id="banner">
+	<div class="content">
+	 
+      <div class="dropdown">
+               <!-- Choose Tag Start-->
+       <p id="headding">Choose a Tag to learn</p>
+       <button onclick="myFunction()" class="dropbtn">&ltTAG></button>
+ <div id="myDropdown" class="dropdown-content">
+    <a href="Tags/Tag - Img.html" target="_Blank">&ltimg></a>
+    <a href="Tags/Tag - Audio.html" target="_Blank"> &ltaudio></a>
+    <a href="Tags/Tag - Video.html" target="_Blank">&ltvideo></a>
+    <a href="Tags/Tag - Font.html" target="_Blank">&ltfont></a>
+    <a href="Tags/Tag - Table.html" target="_Blank">&lttable></a>
+    <a href="Tags/Tag - UL.html" target="_Blank">&ltul></a>
+    <a href="Tags/Tag - OL.html" target="_Blank">&ltol></a>
+    <a href="Tags/Tag - Button.html" target="_Blank">&ltbutton></a>
+    <a href="Tags/Tag - Input.html" target="_Blank">&ltinput></a>
+    <a href="Tags/Tag - Iframe.html" target="_Blank">&ltiframe></a>
+  </div>
+</div>
+<script>
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>    <!-- Choose Tag End-->
+    </div>
+   </section>
+          
+   <!-- Section -->
+    <section>           <!--<IMG> TAG -->
+         <center><u><h1 id="topic">&ltimg> Tag:</h1></u></center>
+	  <div class="posts">
+	  <article>
+		  <div id="bs">
+   
+     <h2 id="h1"> Img Tag </h2>
+     <p id="td">&ltimg> Tag is use to insert an Image,jpg,gif,bmp,jpeg,png files in a Webpage.<br>Img tag is an Empty Tag. </p>
+     
+     <h2 id="h2"> Img Tag - Attributes </h2>
+<ul type="square">
+    <li><p id="td"> <e>src:  </e> value:"<n>url</n>"<br> src attribute is use to define the URL or Location of an image file.</p>
+    <li><p id="td"> <e>alt:  </e> value:"<n>learnHTML</n>"<br> alt attribute is use to define an alternate text for an image file.</p>
+    <li><p id="td"> <e>align:  </e> value:"<n>Left,Right,Top,Bottom,Center</n>"<br> align attribute is use to define an alignment of an image file.</p>
+    <li><p id="td"> <e>width:  </e> value:"<n>Percentage or Pixel</n>"<br> width attribute is use to define the width of an image file.</p>
+    <li><p id="td"> <e>height:  </e> value:"<n>Percentage or Pixel</n>"<br> height attribute is use to define the height of an image file.</p>
+    <li><p id="td"> <e>border:  </e> value:"<n>Pixel</n>"<br> border attribute is use to difine the border of an image file.</p>
+</ul>   
+     </div>
+   </article>
+   <article>
+       
+	    <h2 id="h2"> Img Tag - Example </h2> 
+       <pre id="code">
+&lthtml>  
+   &lthead> 
+      &lttitle> Img Tag &lt/title> 
+   &lt/head>
+  &ltBody>
+&ltimg src="N.jpg" alt="LearnHTMLnJS" align="right" <br> width="35%" height="120px" border="2px">
+  &lt/Body>
+&lt/Html></pre>
+     <center><hr width="40%"></center>
+           <h3>Output</h3>
+     <img src="images/N.jpg" alt="LearnHtml" align="right" width="35%" height="120px" border="2px">
+
+
+	  </article>
+	 </div>
+    </section>
+
+    <section>           <!--<COMMENT> TAG -->
+         <center><u><h1 id="topic">&lt!--comment--> Tag:</h1></u></center>
+    <div class="posts">
+    <article>
+      <div id="bs">
+   
+     <h2 id="h1"> Comment Tag </h2>
+     <p id="td">&lt!--comment--> Tag is use to comment a line in a Webpage.<br></p>
+     
+     <h2 id="h2"> Comment Tag - Attributes </h2>
+    <p id="td"> <e>Comment Tag dont have any Attributes  </e></p>
+     </div>
+   </article>
+   <article>
+       
+      <h2 id="h2"> Comment Tag - Example </h2> 
+       <pre id="code">
+&lthtml>  
+  &lthead> 
+    &lttitle> Img Tag &lt/title>
+  &lt/head>  
+  &ltBody>
+       &lt!--This is a comment--> 
+       &ltp> LearnHTML n JS &lt/p> 
+  &lt/Body>
+&lt/Html></pre>
+     <center><hr width="40%"></center>
+           <h3>Output</h3>
+               <!--This is a comment--><br>
+               <p> LearnHTML n JS </p> <br>
+    </article>
+   </div>
+    </section>
+          <article>
+      <ul class="actions">
+      <li><a href="HTML3.html" id="button_big" class="button">Next Topic</a></li>
+      </ul>
+  </article>
+	</div>
+     </div>
+	 
+
+	<!-- Sidebar -->
+	 <div id="sidebar">
+	  <div class="inner">
+       <!-- Search
+		<section id="search" class="alt">
+		  <form method="post" action="#">
+			<input type="text" name="query" id="query" placeholder="Search"/>
+		  </form>
+		</section> -->
+
+		
+		
+   	  <!-- Menu -->
+	<nav id="menu">
+     <header class="major">
+	   <h2>Learn HTML n JS</h2>
+	 </header>
+	 <ul>
+	  <li><a href="index.html">Home</a></li>
+	  <li><a href="HTML1.html">HTML</a></li>
+	  <li><a href="JS1.html">JavaScript</a></li>
+	  <li>
+		<span class="opener">More</span>
+	      <ul>
+			<li><a href="HTML1.html">HTML</a></li>
+			<li><a href="CSS1.html">CSS</a></li>
+			<li><a href="JS1.html">JavaScript</a></li>
+		  </ul>
+	  <li><a href="About.html">About</a></li>
+	  <br><br>
+  
+
+	<!-- Section 
+  <section>
+	<header class="major">
+	  <h2>HTML</h2>
+	</header>
+	<div class="mini-posts">
+	  <article>
+        <a href="Tag - Img.html"></a>
+	  </article>
+  </section>-->
+  
+  
+  <nav id="menu">
+     <header class="major">
+	   <h2>HTML Tags</h2>
+	 </header>
+	 <ul>
+	  <li><a href="Tag - Img.html">Tag - &ltimg></a></li>
+	  <li><a href="Tag - Audio.html">Tag - &ltaudio></a></li>
+	  <li><a href="Tag - Video.html">Tag - &ltvideo></a></li>
+	  <li><a href="Tag - Input.html">Tag - &ltinput></a></li>
+	  <li><a href="Tag - Iframe.html">Tag - &liframe></a></li>
+	  <br><br>
+  
+
+<br>
+<br>
+<br>
+  </div>
+ </div>
+</div>
+
+		<!-- Scripts -->
+			<script src="js/jquery.min.js"></script>
+			<script src="js/browser.min.js"></script>
+			<script src="js/breakpoints.min.js"></script>
+			<script src="js/util.js"></script>
+			<script src="js/main.js"></script>
+
+			<br>
+	</body>
+</html>
