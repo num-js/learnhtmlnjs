@@ -1,0 +1,91 @@
+<html>
+<head>
+<title> Audio Tag </title> 
+<link rel="icon" href="N.jpg">
+	
+	<style>
+	    #h1{
+			color:red;
+			text-decoration:underline;
+			background-color:black;
+		}
+		#h2{
+		    color:cyan;
+			text-decoration:dotted underline;
+		}
+		pre,#td{
+		    color:white;
+		}
+		pre{
+		    font-size:20;
+			font-family:comic sans MS;
+			background-color:black;
+			text-align:left;
+		}
+		e{
+		    font-size:40;
+		}
+		
+	</style>
+  </head>
+  <body bgcolor="gray">
+   <center>
+     <h1 id="h1"> Audio Tag </h1>
+	 
+	   <p id="td">&ltaudio> Tag is use to use to Insert Audio File in a Webpage.</p>
+	   
+	   
+	   <h2 id="h2"> Audio Tag - Attributes </h2>
+	   
+	   <p id="td"> <e>control:  </e> value:    - <br>
+	   control attribute is use to audio controls should be Displayed.</p>
+	   <p id="td"> <e>autoplay:  </e> value:    - <br>
+	   autoplay attribute is use to play the audio automatically when the webpage is loaded.</p><p id="td"> <e>muted:  </e> value:    - <br>
+	   muted attribute is use to define audio output should be muted.</p>
+	   <p id="td"> <e>loop:  </e> value:    - <br>
+	   loop attribute is use to play again if the audio is end.
+	   <p id="td"> <e>src:  </e> value:    - <br>
+	   src attribute is use to define the sourse of the audio file.
+	   
+	   
+	   
+	   <br>
+	   <h2 id="h2"> Audio Tag - Example </h2> 
+       <pre>
+&ltaudio controls id="audio" autoplay loop>
+       &ltsource src="Faded.mp3" type="audio">
+&lt/audio></pre>
+
+		<br>
+         <hr width="30%">
+	  
+	         <h3>Output</h3>
+<audio controls id="audio" autoplay loop>
+  <source src="Faded.mp3" type="audio/ogg">
+</audio>
+<br>
+  <button onclick="playPause()"><img id="play" src="Play Button.gif" width="60"></button> 
+  
+<script> 
+var audio1 = document.getElementById("audio"); 
+
+function playPause(){ 
+    if (audio1.paused) 
+        audio1.play(); 
+    else 
+        audio1.pause(); 
+		} 
+</script> 
+
+		
+	   <br><br> <br><br>
+	   
+	  
+	  
+
+
+
+
+</center>
+</body>
+</html>

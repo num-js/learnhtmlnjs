@@ -1,0 +1,173 @@
+<html>
+  <head>
+    <title> Table Tag</title>
+	<link rel="icon" href="N.jpg">
+	<style>
+	    #h1{
+			color:red;
+			text-decoration:underline;
+			background-color:black;
+		}
+		#h2{
+		    color:cyan;
+			text-decoration:dotted underline;
+		}
+		pre,#td{
+		    color:white;
+		}
+		pre{
+		    font-size:20;
+			font-family:comic sans MS;
+		}
+		e{
+		    font-size:40;
+		}
+		pre{
+			background-color:black;
+		}
+		#u{
+			text-decoration:underline;
+		}
+		#uc{
+			text-decoration:underline;
+			color:pink;
+		}
+	</style>
+  </head>
+  <body bgcolor="gray">
+   <center>
+     <h1 id="h1"> Table Tag </h1>
+	 
+	   <p id="td">&ltTable> Tag is use to use to create Table in a Webpage.</p>
+	   
+	   <h2 id="h2"> Table Tag - Attributes </h2>
+	   
+	   <p id="td"> <e>border:  </e> value:pixel<br>
+	   border attribute is use to define a border of the table.</p>
+	   
+	   <p id="td"> <e>cellpadding:  </e> value:pixel <br> cellpadding attribute is use to define the space between the cell wall and the cell content.</p>
+	   <p id="td"> <e>cellspacing:  </e>value:pixel<br> 
+	   cellspacing attribute is use to define the space between the cells.</p>
+	    <p id="td"> <e>bgcolor:  </e>value:color name,rgb(0,0,5)<br> 
+	   bgcolor attribute is use to define the background color of the table.</p>
+	    <p id="td"> <e>width:  </e>value:pixel<br> 
+	   width attribute is use to define the width of the table.</p>
+	   
+	   <br>
+	   
+	   <h2 id="h2"> Table Tag contain some Tags to insert Data </h2>
+          
+		 <p id="td"> <e>&lttr>:  </e> This tag is use to create Table Row.</p>
+		 <p id="td"> <e id="u">&ltth>:  </e> This tag is use to insert Table Headding.<br>&ltth> tag has some attributes.They are-</p>
+		 <table align="center">
+		   <tr>
+		       <td id="uc">Attributes
+			   <td>
+		       <td id="uc">Values
+		   </tr>
+		   <tr>
+		       <td>align :
+			   <td>
+		       <td>left,right,top,bottom,center
+		   </tr>
+		   <tr>
+		    <td>bgcolor  :
+			<td>
+		    <td>ColorName,Rgb(0,0,10),#000000-(Hexacode).
+	     </tr>
+		 <tr>
+		       <td>colspan :
+			   <td>
+		       <td>number
+		   </tr>
+		   <tr>
+		       <td>rowspan :
+			   <td>
+		       <td>number
+		   </tr>
+		   <tr>
+		       <td>width :
+			   <td>
+		       <td>pixel,%
+		   </tr>
+		   
+		 </table>  
+		 <p id="td"> <e id="u">&lttd>:  </e> This tag is use to insert Data in the Table.<br>&lttd> tag has some attributes.They are- <br>(see in the above &lttd> and &ltth> has the same Attributes). </p>
+		 
+            
+			
+		
+		<br>	   
+	   
+	   <h2 id="h2"> Table Tag - Example </h2> 
+	    </center>
+       <pre>
+&lttable border="2px" bgcolor="orange" width="500px" cellpadding="2px" cellspacing="5px">
+          &lttr> 
+		    &ltth>Roll No
+		    &ltth>S.Name
+		    &ltth>Marks
+	     &lt/tr>
+	     &lttr>
+		    &lttd>1
+		    &lttd>Ayush
+		    &lttd>75
+	     &lt/tr>
+		 <&lttr>
+		    &lttd>2
+		    &lttd>Noor
+		    &lttd>85
+	     &lt/tr>
+		 &lttr>
+		    &lttd>3
+		    &lttd>Saheb
+		    &lttd>80
+	     &lt/tr>
+		 &lttr>
+		    &lttd colspan="2">Total
+			&lttd>240
+		 &lt/tr>
+&lt/table>
+	  </pre>
+<br>
+      <center>
+         <hr width="30%">
+	   
+	         <h3>Output</h3>
+	   <table border="2px" bgcolor="orange" width="500px" cellpadding="2px" cellspacing="5px">
+	     <tr>
+		    <th>Roll No
+		    <th>S.Name
+		    <th>Marks
+	     </tr>
+	     <tr>
+		    <td>1
+		    <td>Ayush
+		    <td>75
+	     </tr>
+		 <tr>
+		    <td>2
+		    <td>Noor
+		    <td>85
+	     </tr>
+		 <tr>
+		    <td>3
+		    <td>Saheb
+		    <td>80
+	     </tr>
+		 <tr>
+		    <td colspan="2">Total
+			<td>240
+	     </tr>
+	   </table>
+	   
+	   
+	   <br><br> <br><br>
+	   
+	  
+	  
+	   
+  	  </center>
+  </body>
+</html>
+  

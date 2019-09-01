@@ -1,0 +1,116 @@
+<html>
+<head>
+<title> Video Tag </title> 
+<link rel="icon" href="N.jpg">
+	
+	<style>
+	
+	     .button{
+		background-color:lightBlue;
+		color:Red;
+		text-decoration:bold;
+		font-family:papyrus;
+          }
+	    #h1{
+			color:red;
+			text-decoration:underline;
+			background-color:black;
+		}
+		#h2{
+		    color:cyan;
+			text-decoration:dotted underline;
+		}
+		pre,#td{
+		    color:white;
+		}
+		pre{
+		    font-size:20;
+			font-family:comic sans MS;
+			background-color:black;
+			text-align:justify;
+		}
+		e{
+		    font-size:40;
+		}
+	</style>
+  </head>
+  <body bgcolor="gray">
+   <center>
+     <h1 id="h1"> Video Tag </h1>
+	 
+	   <p id="td">&ltvideo> Tag is use to use to Insert Video File in a Webpage.</p>
+	   
+	   
+	   <h2 id="h2"> Video Tag - Attributes </h2>
+	   
+	   <p id="td"> <e>control:  </e> value:    - <br>
+	   control attribute is use to video controls should be Displayed.</p>
+	   <p id="td"> <e>autoplay:  </e> value:    - <br>
+	   autoplay attribute is use to play the video automatically when the webpage is loaded.</p>
+	   <p id="td"> <e>muted:  </e> value:    - <br>
+	   muted attribute is use to define the video output should be muted.</p>
+	   <p id="td"> <e>loop:  </e> value:    - <br>
+	   loop attribute is use to play the video again if the video is end.
+	   <p id="td"> <e>src:  </e> value:    - <br>
+	   src attribute is use to define the sourse of the video file.
+	   <p id="td"> <e>height:  </e> value: pixel <br>
+	   height attribute is use to define  the height of the video player.
+	   <p id="td"> <e>width:  </e> value: pixel <br>
+	   width attribute is use to define  the width of the video player.
+	   <p id="td"> <e>poster:  </e> value:N2.jpg (poster file sourse) <br>
+	   poster attribute is use to define the thumbnail of the video file (when the webpage is loaded).
+	   
+	   
+	   
+	   <br>
+	   <h2 id="h2"> Video Tag - Example </h2> 
+       <pre>
+&ltvideo poster="N2.jpg" id="video1" width="420" autoplay loop>
+      &ltsource src="Faded.mp4" type="video/mp4">
+&lt/video>
+		</pre>
+
+		<br>
+         <hr width="30%">
+	  
+	         <h3>Output</h3>
+
+<center>
+<div style="text-align:center"> 
+  <button class="button" onclick="playPause()">Play/Pause</button> 
+  <button class="button" onclick="makeBig()">Big</button>
+  <button class="button" onclick="makeSmall()">Small</button>
+  <button class="button" onclick="makeNormal()">Normal</button>
+  <br><br>
+  
+  <video poster="N2.jpg" id="video1" width="420" autoplay loop>
+    <source src="Faded.mp4" type="video/mp4">
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+    if (myVideo.paused) 
+        myVideo.play(); 
+    else 
+        myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script> 
+<br><br><br><br>
+</center>
+</body>
+</html>
